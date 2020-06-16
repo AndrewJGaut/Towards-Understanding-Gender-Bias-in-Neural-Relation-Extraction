@@ -1,0 +1,2 @@
+train_NA_NoEq_NoGS.json
+word_vec__NA_NoEq_NoGS.json

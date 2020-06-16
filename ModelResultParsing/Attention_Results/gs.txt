@@ -1,0 +1,1231 @@
+train_NA_NoEq_NoGS.json
+Loading data file ./data/Wikigender/train_bush_GS.json...
+Finish loading
+Loading word vector file...
+Finish loading
+Elimiating case sensitive problem...
+Finish eliminating
+Sort data...
+Finish sorting
+Got 67836 words of 100 dims
+Building word vector matrix and mapping...
+Finish building
+Pre-processing data...
+Finish pre-processing
+Storing processed files...
+Finish storing
+Total relation fact: 1
+Pre-processed files exist. Loading them...
+Finish loading
+Total relation fact: 2112
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@******************---------------^^^^^^^^^^^^
+training with: BATCH_SIZE=3, LEARNING_RATE=0.5
+training with: ENCODER=pcnn, SELECTOR=att
+training with: GENDERSWAP=False, EQUALIZED=False, NAMEANONYMIZE=True, DEBIASEDEMBEDDINGS=False, SWAPNAMES=False
+testing with: MALE=False, FEMALE=True
+Start training...
+Calculating weights_table...
+Finish calculating
+###### Epoch 0 ######
+ATTSCOREPERISNTANCE [0.16803849 0.3499378  0.21173862 0.27028507]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 0 step 0 time 1.78 | loss: 2.022694, not NA accuracy: 0.000000, accuracy: 0.666667
+Average iteration time: 1.779508
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2303820584041754
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 1 ######
+ATTSCOREPERISNTANCE [0.00120019 0.5480679  0.45016548 0.0005664 ]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 1 step 0 time 7.18 | loss: 0.687393, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 7.176473
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23091951907619515
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 2 ######
+ATTSCOREPERISNTANCE [2.487121e-03 9.878896e-01 9.193165e-03 4.302262e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 2 step 0 time 7.16 | loss: 0.574865, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 7.162146
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2305016707130311
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 3 ######
+ATTSCOREPERISNTANCE [5.8030435e-03 9.4449288e-01 4.9009878e-02 6.9425983e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 3 step 0 time 17.45 | loss: 0.484420, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 17.447560
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23062233684575686
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 4 ######
+ATTSCOREPERISNTANCE [3.4129203e-04 9.6749508e-01 3.2063015e-02 1.0072586e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 4 step 0 time 26.33 | loss: 0.412465, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 26.332864
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23019063795386263
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 5 ######
+ATTSCOREPERISNTANCE [4.60669049e-04 9.95431066e-01 3.98934679e-03 1.18910015e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 5 step 0 time 28.81 | loss: 0.355123, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 28.809476
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23022518672177586
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 6 ######
+ATTSCOREPERISNTANCE [1.4490987e-03 8.4859204e-01 1.4955004e-01 4.0880762e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 6 step 0 time 31.99 | loss: 0.309169, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 31.993267
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2303850112510916
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 7 ######
+ATTSCOREPERISNTANCE [7.7695709e-05 9.9709725e-01 2.8161670e-03 8.9152800e-06]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 7 step 0 time 40.30 | loss: 0.272042, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 40.296418
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23054254426876752
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 8 ######
+ATTSCOREPERISNTANCE [2.4701552e-03 1.0622157e-02 9.8605424e-01 8.5339614e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 8 step 0 time 35.57 | loss: 0.241724, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 35.569792
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23066479261060213
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 9 ######
+ATTSCOREPERISNTANCE [0.00951633 0.0681693  0.91789305 0.00442133]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 9 step 0 time 51.38 | loss: 0.217026, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 51.378572
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2308034255673591
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 10 ######
+ATTSCOREPERISNTANCE [3.2284521e-04 8.2147938e-01 1.7816536e-01 3.2385804e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 10 step 0 time 58.65 | loss: 0.195850, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 58.650266
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23082021875505773
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 11 ######
+ATTSCOREPERISNTANCE [2.4976378e-04 8.4685676e-02 9.1498917e-01 7.5324264e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 11 step 0 time 60.03 | loss: 0.178267, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 60.032662
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23072866989853974
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 12 ######
+ATTSCOREPERISNTANCE [1.1434676e-03 9.8015368e-01 1.8225320e-02 4.7758737e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 12 step 0 time 60.51 | loss: 0.163306, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 60.507050
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23051506780824207
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 13 ######
+ATTSCOREPERISNTANCE [0.0093236  0.1699023  0.8191013  0.00167286]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 13 step 0 time 65.03 | loss: 0.150460, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 65.025592
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23093044973837432
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 14 ######
+ATTSCOREPERISNTANCE [8.6854474e-04 9.8104250e-01 1.7709857e-02 3.7904776e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 14 step 0 time 70.41 | loss: 0.139336, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 70.408257
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23090749674236938
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 15 ######
+ATTSCOREPERISNTANCE [3.2155775e-03 8.4008449e-01 1.5629505e-01 4.0488495e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 15 step 0 time 78.49 | loss: 0.130394, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 78.491613
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23253191274463914
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 16 ######
+ATTSCOREPERISNTANCE [1.8415340e-04 3.5136405e-01 6.4838105e-01 7.0691669e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 16 step 0 time 92.75 | loss: 0.121093, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 92.749640
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23251810894108463
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 17 ######
+ATTSCOREPERISNTANCE [8.7887252e-05 9.8830330e-01 1.1594935e-02 1.3839541e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 17 step 0 time 94.65 | loss: 0.113547, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 94.653788
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23242676446900828
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 18 ######
+ATTSCOREPERISNTANCE [0.02442383 0.37450212 0.59460783 0.00646614]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 18 step 0 time 93.37 | loss: 0.106832, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 93.373394
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23243156950066513
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 19 ######
+ATTSCOREPERISNTANCE [0.01187093 0.81148446 0.17288034 0.0037643 ]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 19 step 0 time 98.96 | loss: 0.100824, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 98.957058
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23235555475513844
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 20 ######
+ATTSCOREPERISNTANCE [0.36990088 0.22267595 0.30224958 0.10517358]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 20 step 0 time 105.95 | loss: 0.095421, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 105.946171
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23230843994730588
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 21 ######
+ATTSCOREPERISNTANCE [1.7595357e-03 4.6156280e-02 9.5164341e-01 4.4082821e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 21 step 0 time 106.72 | loss: 0.090539, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 106.716337
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23227532241408622
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 22 ######
+ATTSCOREPERISNTANCE [1.1128833e-04 9.9974519e-01 9.5724419e-05 4.7810499e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 22 step 0 time 119.91 | loss: 0.088375, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 119.907875
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23694886252978956
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 23 ######
+ATTSCOREPERISNTANCE [0.13243073 0.5928608  0.2571771  0.01753127]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 23 step 0 time 119.23 | loss: 0.082103, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 119.229224
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23696107745858966
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 24 ######
+ATTSCOREPERISNTANCE [3.1092146e-04 9.6952163e-02 9.0266639e-01 7.0430979e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 24 step 0 time 92.57 | loss: 0.078522, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 92.572589
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.236805058921302
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 25 ######
+ATTSCOREPERISNTANCE [1.5659523e-03 1.6928501e-02 9.8144954e-01 5.6057248e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 25 step 0 time 133.79 | loss: 0.075018, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 133.791535
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23679264671446648
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 26 ######
+ATTSCOREPERISNTANCE [1.1462173e-03 1.4588712e-01 8.5277390e-01 1.9278478e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 26 step 0 time 139.30 | loss: 0.071899, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 139.295633
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23684247100073355
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 27 ######
+ATTSCOREPERISNTANCE [3.2250962e-05 9.9971598e-01 2.4572248e-04 6.0038747e-06]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 27 step 0 time 151.21 | loss: 0.069196, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 151.213978
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23657493002432067
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 28 ######
+ATTSCOREPERISNTANCE [1.5841933e-03 7.1751934e-01 2.8076631e-01 1.3021672e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 28 step 0 time 153.27 | loss: 0.066357, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 153.265622
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2367754098908113
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 29 ######
+ATTSCOREPERISNTANCE [0.14864084 0.77168626 0.07175299 0.00791988]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 29 step 0 time 150.30 | loss: 0.064172, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 150.300824
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2368436012040386
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 30 ######
+ATTSCOREPERISNTANCE [2.0331603e-05 1.9437026e-02 9.8053682e-01 5.8692376e-06]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 30 step 0 time 167.79 | loss: 0.061594, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 167.791914
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2368547616013542
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 31 ######
+ATTSCOREPERISNTANCE [1.7935674e-04 2.8810963e-01 7.1152329e-01 1.8768839e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 31 step 0 time 169.81 | loss: 0.059426, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 169.812614
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2369093284154172
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 32 ######
+ATTSCOREPERISNTANCE [1.7368642e-04 6.7922342e-01 3.2045773e-01 1.4513900e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 32 step 0 time 175.71 | loss: 0.057418, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 175.713491
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23690554658501176
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 33 ######
+ATTSCOREPERISNTANCE [5.7736109e-04 2.2197926e-01 7.7730083e-01 1.4256829e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 33 step 0 time 181.58 | loss: 0.055537, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 181.578947
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23684942742244236
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 34 ######
+ATTSCOREPERISNTANCE [1.4250153e-05 9.9497342e-01 5.0082961e-03 4.0841041e-06]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 34 step 0 time 169.86 | loss: 0.053772, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 169.858014
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23683429696073066
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 35 ######
+ATTSCOREPERISNTANCE [0.00530426 0.672562   0.3210611  0.00107266]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 35 step 0 time 173.94 | loss: 0.052112, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 173.939679
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23678946646755208
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 36 ######
+ATTSCOREPERISNTANCE [7.8869783e-07 5.6950283e-01 4.3049625e-01 1.2589474e-07]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 36 step 0 time 176.85 | loss: 0.050550, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 176.854032
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23680134905523328
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 37 ######
+ATTSCOREPERISNTANCE [5.2917505e-05 9.9910361e-01 8.1483350e-04 2.8646997e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 37 step 0 time 168.83 | loss: 0.049075, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 168.832811
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23678013134474105
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 38 ######
+ATTSCOREPERISNTANCE [2.0247771e-06 9.9994302e-01 5.4318065e-05 6.4970175e-07]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 38 step 0 time 166.23 | loss: 0.047682, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 166.229292
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23664892953374753
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 39 ######
+ATTSCOREPERISNTANCE [1.1945994e-04 5.7442111e-01 4.2545265e-01 6.7437568e-06]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 39 step 0 time 195.77 | loss: 0.046363, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 195.772737
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23662037181423298
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 40 ######
+ATTSCOREPERISNTANCE [4.1900457e-06 9.9977714e-01 2.1838992e-04 3.1623165e-07]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 40 step 0 time 204.36 | loss: 0.045114, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 204.364846
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23662713240315542
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 41 ######
+ATTSCOREPERISNTANCE [3.2668340e-04 7.5932154e-03 9.9196506e-01 1.1508355e-04]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 41 step 0 time 208.86 | loss: 0.043929, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 208.859562
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.236603890585397
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 42 ######
+ATTSCOREPERISNTANCE [2.9008135e-05 1.9229721e-01 8.0765194e-01 2.1890559e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 42 step 0 time 213.78 | loss: 0.042803, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 213.775907
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2365802381274198
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 43 ######
+ATTSCOREPERISNTANCE [2.6509981e-04 9.5311880e-01 4.6586722e-02 2.9384018e-05]
+name b'/guid/9202a8c04000641f800000000001e4xa#/guid/9202a8c04000641f80000000000sr5co#spouse'
+sentences: [b"`` [ 9 ] he met George W. Bush in July 1977 when mutual friends Joe and Jan O'Neill invited his and Bush to a backyard barbecue at their home ."
+ b'[ 21 ] George W. Bush credited her husband with her decision to stop drinking in 1986 .'
+ b'According to George Bush , when she asked his to marry her , he had said , `` Yes .'
+ b"he was to arrive there with his son Barbara Pierce Bush , his wife George W. Bush , and Soledad O'Brien , a journalist ."
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 43 step 0 time 217.63 | loss: 0.041732, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 217.626829
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.151899, accuracy: 0.150000[TEST] step 1 | not NA accuracy: 0.202532, accuracy: 0.200000[TEST] step 2 | not NA accuracy: 0.229474, accuracy: 0.227083[TEST] step 3 | not NA accuracy: 0.253943, accuracy: 0.251563[TEST] step 4 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 5 | not NA accuracy: 0.240506, accuracy: 0.237500[TEST] step 6 | not NA accuracy: 0.234657, accuracy: 0.232143[TEST] step 7 | not NA accuracy: 0.229676, accuracy: 0.227344[TEST] step 8 | not NA accuracy: 0.231202, accuracy: 0.228472[TEST] step 9 | not NA accuracy: 0.237674, accuracy: 0.235000[TEST] step 10 | not NA accuracy: 0.244534, accuracy: 0.241477[TEST] step 11 | not NA accuracy: 0.246568, accuracy: 0.243229[TEST] step 12 | not NA accuracy: 0.247563, accuracy: 0.244231[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23658138193859646
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+######
+Finish training Wikigender_pcnn_att__NA_NoEq_NoGS_NoDE
+Best epoch auc = 0.236961

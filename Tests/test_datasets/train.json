@@ -1,0 +1,176 @@
+[
+	{
+		"sentence": "a member of the democratic party , he be the first african american to be elect to the presidency . ",
+		"head": {"word": " barack obama", "id": "m.dk1wn"},
+		"tail": {"word": " democratic party", "id": "m.y42eh"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 131 ] in the march2004 primary election , obama win in an unexpectedlandslide—which overnight make him a rise star within the national democratic party , start speculation about a presidential future , and lead to the reissue of his memoir , dreams from my father . ",
+		"head": {"word": " barack obama", "id": "m.dk1wn"},
+		"tail": {"word": " democratic party", "id": "m.y42eh"},
+		"relation": "party"
+	},
+	{
+		"sentence": "his speech be well receive and elevate his status within the democratic party . ",
+		"head": {"word": " barack obama", "id": "m.dk1wn"},
+		"tail": {"word": " democratic party", "id": "m.y42eh"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 165 ] numerous candidate enter the democratic party presidential primary . ",
+		"head": {"word": " barack obama", "id": "m.dk1wn"},
+		"tail": {"word": " democratic party", "id": "m.y42eh"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 180 ] [ 181 ] [ 182 ] as the incumbent president he run virtually unopposed in the democratic party presidential primary , [ 183 ] and on april3,2012 , obama have secure the2778 convention delegate need to win the democratic nomination . ",
+		"head": {"word": " barack obama", "id": "m.dk1wn"},
+		"tail": {"word": " democratic party", "id": "m.y42eh"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 184 ] at the democratic national convention in charlotte , north carolina , obama and joe biden be formally nominate by former president bill clinton as the democratic party candidate for president and vice president in the general election . ",
+		"head": {"word": " barack obama", "id": "m.dk1wn"},
+		"tail": {"word": " democratic party", "id": "m.y42eh"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 311 ] obama call the november2,2010 election , where the democratic party lose63 seat in , and control of , the house of representatives , [ 312 ] `` humbling '' and a `` shellacking '' . ",
+		"head": {"word": " barack obama", "id": "m.dk1wn"},
+		"tail": {"word": " democratic party", "id": "m.y42eh"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 46 ] obama be elect to the illinois senate in1996 , succeed democratic state senator alice palmer from illinois's13th district , which , at that time , span chicago south side neighborhood from hydepark–kenwood south to south shore and west to chicago lawn . ",
+		"head": {"word": " barack obama", "id": "m.dk1wn"},
+		"tail": {"word": " alice palmer", "id": "m.jqpor"},
+		"relation": "predecessor"
+	},
+	{
+		"sentence": "[ 155 ] indeed , there be speculation at the time , and in year since , about mccain himself leave the republican party , but mccain have always adamantly deny that he ever consider do so . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 192 ] the strategy 's opponent label it `` mccain 's plan '' [ 193 ] and university of virginia political science professor larry sabato say , `` mccain own iraq just as much as bush do now. `` [ 168 ] the surge and the war be unpopular during most of the year , even within the republican party , [ 194 ] as mccain 's presidential campaign be underway ; face with the consequence , mccain frequently respond , `` i would much rather lose a campaign than a war. `` [ 195 ] in march2008 , mccain credit the surge strategy with reduce violence in iraq , as he make his eighth trip to that country since the war begin . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "on september3,2008 , mccain and palin become the republican party 's presidential and vice presidential nominee at the2008 republican national convention in saint paul , minnesota . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 244 ] mccain 's decision to choose sarah palin as his run mate be criticize ; new york times journalist david brooks say that `` he take a disease that be run through the republican party–anti-intellectualism , disrespect for fact– and he put it right at the centre of the party '' . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 245 ] laura mcgann in vox say that mccain give the `` reality tv politics '' and tea party movement more political legitimacy , as well as solidify `` the republican party 's comfort with a candidate who would say absurdity ... unleash a political style and a value system that animate the tea party movement and lay the groundwork for a trump presidency. `` [ 246 ] although mccain say later that he express regret for not choose the independent senator joe lieberman as his vp candidate instead , he consistently defend palin 's performance at his event . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 261 ] [ 264 ] meghan mccain say that she can not `` go a day without someone bring up ( that ) moment , '' and note that at the time `` there be a lot of people really try to get my dad to go ( against obama ) with ... you be a muslim , you be not an american aspect of that , '' but that her father have refuse. `` i can remember think that it be a morally amazing and beautiful moment , but that maybe there would be people in the republican party that would be quite angry , '' she say . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 274 ] mccain also vote against obama 's supreme court nomination of soniasotomayor—saying that while undeniably qualify , `` i do not believe that she share my belief in judicial restraint '' [ 275 ] —and by august2009 be side more often with his republican party on closely divide vote than ever before in his senatorial career . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 297 ] [ 298 ] in the2012 republican party presidential primary , mccain endorse former2008 rival mitt romney and campaign for him , but compare the contest to a greek tragedy due to itsdrawn-out nature with massive superpac-funded attack ad damage all the contender . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 306 ] mccain take the lead in criticize a grownon-interventionist movement within the republican party , exemplify by his march2013 comment that senators rand paul and ted cruz and representative justin amash be `` wacko bird '' . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 317 ] by early2014 , mccain 's apostasy be enough that the arizona republican party formally censure him for have what they saw as a liberal record that have be `` disastrous and harmful '' . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 423 ] during barack obama 's presidency , mccain be one of the top five republicans most likely to vote with obama 's position on significant vote ; mccain vote with obama 's position on such vote more than half the time in2013 and be `` censure by the arizona republican party for aso-called'liberal ' voting record '' . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 24 ] [ 474 ] [ 475 ] his daughter meghan become a blogging and twittering presence in the debate about the future of the republican party follow the2008 election , and show some of his maverick tendency . ",
+		"head": {"word": " john mccain", "id": "m.9r146"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "he previously serve as the70th governor of massachusetts from2003 to2007 and be the republican party 's nominee for president of the united states in the2012election.raised in bloomfield hills , michigan , by his parent , george and lenore romney , he spendtwo-and-a-half year in france as a mormon missionary starting in1966 . ",
+		"head": {"word": " mitt romney", "id": "m.barr4"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "though he win several primary and caucus , senator john mccain be choose as the republican party 's nominee . ",
+		"head": {"word": " mitt romney", "id": "m.barr4"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 127 ] [ 128 ] he win68 percent of the vote at the may1994 massachusetts republican party convention ; businessman john lakian finish a distant second , eliminate jeghelian . ",
+		"head": {"word": " mitt romney", "id": "m.barr4"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 217 ] during2004 , romney spend considerable effort try to bolster the state republican party , but the party fail to gain any seat in the state legislative election that year . ",
+		"head": {"word": " mitt romney", "id": "m.barr4"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 225 ] in the2006 massachusetts gubernatorial election , democrat deval patrick hail a20-point win over republican kerry healey , romney 's lieutenant governor , with the win partially due to dissatisfaction with romney 's administration and the weak condition of the state 's republican party . ",
+		"head": {"word": " mitt romney", "id": "m.barr4"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "[ 298 ] [ 300 ] [ 302 ] as many potential republican candidate with star power and fundraising ability decide not to run ( include mike pence , john thune , haley barbour , mike huckabee , and mitch daniels ) , republican party figure search for plausible alternative to romney . ",
+		"head": {"word": " mitt romney", "id": "m.barr4"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "i so wish that i have be able to fulfill your hope to lead this country in a different direction , but the nation choose another leader. `` [ 365 ] reflecting on his defeat during a conference call to hundred of fundraiser and donor a week after the election , romney attribute the outcome to obama 's have secure the vote of specific interest group , include african americans , hispanic americans , young people , and woman , by offer them what romney call `` extraordinary financial gift. `` [ 366 ] [ 367 ] [ 368 ] the remark draw heavy criticism from prominent member of the republican party . ",
+		"head": {"word": " mitt romney", "id": "m.barr4"},
+		"tail": {"word": " republican party", "id": "m.pakkd"},
+		"relation": "party"
+	},
+	{
+		"sentence": "active in the church of jesus christ oflatter-day saints ( lds church ) throughout his adult life , romney serve as bishop of his ward and later as a stake president nearboston.after step down from bain capital and his local leadership role in the lds church , romney run as the republican candidate in the1994 united states senate election in massachusetts . ",
+		"head": {"word": " mitt romney", "id": "m.barr4"},
+		"tail": {"word": " the church of jesus christ ofLatter-day saints", "id": "m.jv5tj"},
+		"relation": "religion"
+	},
+	{
+		"sentence": "[ 145 ] in2002 , plague by political misstep and personal scandal , the administration of republican acting governor of massachusetts jane swift appear vulnerable , and many republicans view her as unable to win a general election . ",
+		"head": {"word": " mitt romney", "id": "m.barr4"},
+		"tail": {"word": " jane swift", "id": "m.cx4pa"},
+		"relation": "predecessor"
+	}
+]

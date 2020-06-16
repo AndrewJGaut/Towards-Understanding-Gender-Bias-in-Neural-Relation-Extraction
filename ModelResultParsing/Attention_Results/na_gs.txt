@@ -1,0 +1,1073 @@
+train_NA_NoEq_NoGS.json
+Loading data file ./data/Wikigender/train_bush_NA_GS.json...
+Finish loading
+Loading word vector file...
+Finish loading
+Elimiating case sensitive problem...
+Finish eliminating
+Sort data...
+Finish sorting
+Got 67836 words of 100 dims
+Building word vector matrix and mapping...
+Finish building
+Pre-processing data...
+Finish pre-processing
+Storing processed files...
+Finish storing
+Total relation fact: 1
+Pre-processed files exist. Loading them...
+Finish loading
+Total relation fact: 2112
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@******************---------------^^^^^^^^^^^^
+training with: BATCH_SIZE=3, LEARNING_RATE=0.5
+training with: ENCODER=pcnn, SELECTOR=att
+training with: GENDERSWAP=False, EQUALIZED=False, NAMEANONYMIZE=True, DEBIASEDEMBEDDINGS=False, SWAPNAMES=False
+testing with: MALE=False, FEMALE=True
+Start training...
+Calculating weights_table...
+Finish calculating
+###### Epoch 0 ######
+ATTSCOREPERISNTANCE [0.8016683  0.0317906  0.14646398 0.02007711]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 0 step 0 time 1.56 | loss: 2.746552, not NA accuracy: 0.000000, accuracy: 0.000000
+Average iteration time: 1.558026
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.235714Error with metrics dict
+
+[TEST] auc: 0.23478640953154728
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 1 ######
+ATTSCOREPERISNTANCE [0.0000000e+00 4.8942847e-26 0.0000000e+00 1.0000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 1 step 0 time 3.48 | loss: 0.992204, not NA accuracy: 1.000000, accuracy: 0.333333
+Average iteration time: 3.480309
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23479612082067175
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 2 ######
+ATTSCOREPERISNTANCE [3.8486829e-23 8.7604243e-01 8.4246316e-22 1.2395761e-01]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 2 step 0 time 7.17 | loss: 0.830714, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 7.166162
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2347961957362819
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 3 ######
+ATTSCOREPERISNTANCE [0. 0. 0. 1.]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 3 step 0 time 10.25 | loss: 0.694983, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 10.251025
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23482094366086814
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 4 ######
+ATTSCOREPERISNTANCE [3.7914862e-07 9.9885798e-01 1.1416485e-03 2.4325873e-16]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 4 step 0 time 13.69 | loss: 0.583474, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 13.689471
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348209426860703
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 5 ######
+ATTSCOREPERISNTANCE [2.9916654e-20 2.0322614e-36 2.2289144e-28 1.0000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 5 step 0 time 17.04 | loss: 0.493280, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 17.037425
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23482109209602775
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 6 ######
+ATTSCOREPERISNTANCE [0.000000e+00 2.577487e-16 0.000000e+00 1.000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 6 step 0 time 32.01 | loss: 0.420897, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 32.014317
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23482101785884202
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 7 ######
+ATTSCOREPERISNTANCE [9.9725842e-01 3.2236750e-15 7.0393544e-30 2.7415140e-03]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 7 step 0 time 32.43 | loss: 0.362870, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 32.425074
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23482109178206917
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 8 ######
+ATTSCOREPERISNTANCE [0. 0. 0. 1.]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 8 step 0 time 40.43 | loss: 0.316164, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 40.427377
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23482097826165593
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 9 ######
+ATTSCOREPERISNTANCE [0.0000000e+00 8.1888235e-33 0.0000000e+00 1.0000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 9 step 0 time 49.27 | loss: 0.278294, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 49.269801
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23482101726632226
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 10 ######
+ATTSCOREPERISNTANCE [1.9754516e-31 1.0000000e+00 8.4853851e-12 3.6721495e-08]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 10 step 0 time 49.45 | loss: 0.247305, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 49.451550
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348209799617838
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 11 ######
+ATTSCOREPERISNTANCE [1.0000000e+00 3.4010456e-30 0.0000000e+00 4.9009033e-24]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 11 step 0 time 50.69 | loss: 0.221691, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 50.694462
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23482109144955576
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 12 ######
+ATTSCOREPERISNTANCE [8.58036168e-28 6.54897179e-20 1.07211736e-26 1.00000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 12 step 0 time 56.33 | loss: 0.200303, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 56.334188
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23482109144955576
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 13 ######
+ATTSCOREPERISNTANCE [6.4119615e-31 1.0000000e+00 1.0069231e-33 7.0316073e-25]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 13 step 0 time 63.69 | loss: 0.182265, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 63.687066
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348210540298254
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 14 ######
+ATTSCOREPERISNTANCE [3.7901455e-16 2.0462271e-26 1.1863795e-07 9.9999988e-01]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 14 step 0 time 68.12 | loss: 0.166909, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 68.116942
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23482101696235314
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 15 ######
+ATTSCOREPERISNTANCE [0. 0. 0. 1.]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 15 step 0 time 73.34 | loss: 0.153720, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 73.339568
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23485077732071605
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 16 ######
+ATTSCOREPERISNTANCE [0.0000000e+00 1.0000000e+00 0.0000000e+00 5.4456622e-17]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 16 step 0 time 77.78 | loss: 0.142298, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 77.778004
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.234850851445686
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 17 ######
+ATTSCOREPERISNTANCE [0.0000000e+00 1.0000000e+00 6.2928222e-21 1.2358421e-25]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 17 step 0 time 91.31 | loss: 0.132331, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 91.306845
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23486765127623113
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+Best model, storing...
+Finish storing
+###### Epoch 18 ######
+ATTSCOREPERISNTANCE [0. 0. 0. 1.]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 18 step 0 time 88.16 | loss: 0.123573, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 88.162936
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348676136564608
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 19 ######
+ATTSCOREPERISNTANCE [3.4856007e-01 7.8730928e-03 1.6479356e-05 6.4355034e-01]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 19 step 0 time 94.59 | loss: 0.115827, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 94.594962
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23486765077034916
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 20 ######
+ATTSCOREPERISNTANCE [0.0000000e+00 0.0000000e+00 1.6059103e-36 1.0000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 20 step 0 time 101.83 | loss: 0.108936, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 101.829967
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23486765077034916
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 21 ######
+ATTSCOREPERISNTANCE [6.8534039e-19 1.0000000e+00 1.9791103e-23 1.0231480e-08]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 21 step 0 time 104.13 | loss: 0.102772, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 104.125947
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348676503448165
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 22 ######
+ATTSCOREPERISNTANCE [3.5869067e-07 9.9999964e-01 3.6540299e-35 1.6489958e-32]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 22 step 0 time 108.09 | loss: 0.097230, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 108.094389
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348676503448165
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 23 ######
+ATTSCOREPERISNTANCE [0.000000e+00 6.479987e-20 0.000000e+00 1.000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 23 step 0 time 112.49 | loss: 0.092224, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 112.494704
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348676503448165
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 24 ######
+ATTSCOREPERISNTANCE [0.0000000e+00 1.0000000e+00 0.0000000e+00 1.7294088e-29]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 24 step 0 time 121.15 | loss: 0.087683, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 121.149606
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23486765038894503
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 25 ######
+ATTSCOREPERISNTANCE [5.1804284e-34 1.0000000e+00 1.8812815e-17 4.3406866e-23]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 25 step 0 time 127.83 | loss: 0.083547, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 127.833531
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23486765038894503
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 26 ######
+ATTSCOREPERISNTANCE [8.6942131e-32 2.3853027e-33 1.7512404e-25 1.0000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 26 step 0 time 97.16 | loss: 0.079766, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 97.164220
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348675754282748
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 27 ######
+ATTSCOREPERISNTANCE [0.0000000e+00 1.0000000e+00 2.4168101e-33 2.0421522e-23]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 27 step 0 time 127.07 | loss: 0.076297, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 127.070170
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348675754282748
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 28 ######
+ATTSCOREPERISNTANCE [0. 0. 0. 1.]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 28 step 0 time 118.95 | loss: 0.073106, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 118.951311
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348675754282748
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 29 ######
+ATTSCOREPERISNTANCE [0. 0. 0. 1.]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 29 step 0 time 147.75 | loss: 0.070160, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 147.749571
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348675754282748
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 30 ######
+ATTSCOREPERISNTANCE [0. 1. 0. 0.]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 30 step 0 time 150.59 | loss: 0.067433, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 150.586576
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348675754282748
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 31 ######
+ATTSCOREPERISNTANCE [2.4766967e-29 0.0000000e+00 0.0000000e+00 1.0000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 31 step 0 time 154.55 | loss: 0.064902, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 154.553336
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348675754282748
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 32 ######
+ATTSCOREPERISNTANCE [1.4791858e-13 2.0481327e-26 1.2210545e-07 9.9999988e-01]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 32 step 0 time 159.25 | loss: 0.062548, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 159.247106
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348675754282748
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 33 ######
+ATTSCOREPERISNTANCE [2.3440865e-03 1.9491482e-14 4.2564693e-22 9.9765587e-01]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 33 step 0 time 163.35 | loss: 0.060353, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 163.350672
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.2348675754282748
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 34 ######
+ATTSCOREPERISNTANCE [6.9787519e-32 5.1165240e-18 1.1151841e-24 1.0000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 34 step 0 time 168.56 | loss: 0.058301, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 168.559367
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23486753767345622
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 35 ######
+ATTSCOREPERISNTANCE [0. 0. 0. 1.]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 35 step 0 time 172.92 | loss: 0.056380, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 172.921358
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23486753767345622
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 36 ######
+ATTSCOREPERISNTANCE [0.0000000e+00 1.9336593e-34 8.8422015e-28 1.0000000e+00]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 36 step 0 time 179.32 | loss: 0.054577, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 179.321755
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23486753735480664
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+###### Epoch 37 ######
+ATTSCOREPERISNTANCE [4.3766648e-13 6.8667215e-01 3.1332785e-01 1.1092667e-18]
+name b'/guid/9202a8c04000641f80000000000cttkn#/guid/9202a8c04000641f8000000000038xjf#spouse'
+sentences: [b'E30 E30 E30 E30 E5316 E22643 E377 E61 E423 E14794 E3115 E30 when mutual friends E940 E4 E1688 E3159 invited E4587 E4 E423 E22714 E375 backyard barbecue at their home E30'
+ b'E30 E30 E30 E377 E61 E423 credited E1725 E15873 E20638 E1725 decision E22714 stop drinking E14794 E30 E30'
+ b'According E22714 E377 E423 E30 when E1540 asked E4587 E22714 marry his E30 E5316 had E5366 E30 E30 Yes E30'
+ b'E5316 was E22714 arrive there E20638 E4587 E2432 E36 E2621 E423 E30 E4587 E10754 E377 E61 E423 E30 E4 E7392 E2915 E30 E375 journalist E30'
+ b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+ATTSCOREPERISNTANCE [1.]
+name b'None#None#None'
+sentences: [b'' b'' b'' b'' b'']
+epoch 37 step 0 time 191.23 | loss: 0.052883, not NA accuracy: 1.000000, accuracy: 1.000000
+Average iteration time: 191.234433
+Testing...
+Calculating weights_table...
+Finish calculating
+[TEST] step 0 | not NA accuracy: 0.243750, accuracy: 0.243750[TEST] step 1 | not NA accuracy: 0.241379, accuracy: 0.240625[TEST] step 2 | not NA accuracy: 0.237996, accuracy: 0.237500[TEST] step 3 | not NA accuracy: 0.257457, accuracy: 0.256250[TEST] step 4 | not NA accuracy: 0.256281, accuracy: 0.255000[TEST] step 5 | not NA accuracy: 0.267576, accuracy: 0.265625[TEST] step 6 | not NA accuracy: 0.257194, accuracy: 0.255357[TEST] step 7 | not NA accuracy: 0.261830, accuracy: 0.259375[TEST] step 8 | not NA accuracy: 0.252987, accuracy: 0.250000[TEST] step 9 | not NA accuracy: 0.245570, accuracy: 0.242500[TEST] step 10 | not NA accuracy: 0.250288, accuracy: 0.247159[TEST] step 11 | not NA accuracy: 0.248418, accuracy: 0.245312[TEST] step 12 | not NA accuracy: 0.250000, accuracy: 0.246635[TEST] step 13 | not NA accuracy: 0.250000, accuracy: 0.280357Error with metrics dict
+
+[TEST] auc: 0.23486757498976932
+Finish testing
+SPOUSE: numcorrect=528, numtot=528, percentage=1.0
+BIRTHDATE: numcorrect=0, numtot=528, percentage=0.0
+BIRTHPLACE: numcorrect=0, numtot=528, percentage=0.0
+HYPERNYM: numcorrect=0, numtot=528, percentage=0.0
+######
+Finish training Wikigender_pcnn_att__NA_NoEq_NoGS_NoDE
+Best epoch auc = 0.234868
