@@ -99,8 +99,13 @@ You can find it in WikiGenderBias.zip in the home directory of the repo.
 Note that, in the code, it is referred to as Wikigender (we changed the name after we wrote the code).
 
 
+## Credit
 
-Good luck!
+We use code from debiaswe[https://github.com/tolga-b/debiaswe] in WordEmbeddings file (debiaswe and web folders).
+
+Additionally, we use code from OpenNRE[https://github.com/thunlp/OpenNRE] in our Models/OpenNRE folder (we make only slight adjustments to run our experiments).
+
+
 
 
 
