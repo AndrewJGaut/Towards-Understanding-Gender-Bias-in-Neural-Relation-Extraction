@@ -61,13 +61,17 @@ The dataset is organized as follows:
      \[  
      
      'entity1': name of person for article from which we took data, 'gender_of_entity1': gender of said person, 
-     'relations': {
-           'relation_name': name of relation,
-           'entity2': the name of the other entity (the one that was found through distant supervision on the Wikipedia page of entity1),
-           'sentences': \[ A list of distantly supervised sentences pulled from entity1's Wiki page that mention entity2 \],
-           'positions': \[ A list of dictionaries giving the positions of the entities in the corresponding sentence (i.e., positions\[i\] gives the character positions of entity1 and entity2 in sentences\[i\] \]
-     \},
-     
+     'relations':
+     [
+           {
+               'relation_name': name of relation,
+               'entity2': the name of the other entity (the one that was found through distant supervision on the Wikipedia page of entity1),
+               'sentences': \[ A list of distantly supervised sentences pulled from entity1's Wiki page that mention entity2 \],
+               'positions': \[ A list of dictionaries giving the positions of the entities in the corresponding sentence (i.e., positions\[i\] gives the character positions of entity1 and entity2 in sentences\[i\] \]
+         \},
+         ... other relations...
+    ]/
+
      
      ...
      
