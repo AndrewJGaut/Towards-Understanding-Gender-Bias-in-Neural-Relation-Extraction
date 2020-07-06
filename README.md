@@ -51,7 +51,7 @@ First, place the results from the `test_result` folder into the `bootstrapped_te
 ## The Dataset
 
 The dataset is organized as follows:
-
+```
 \{  
 
   'train':  
@@ -88,6 +88,7 @@ The dataset is organized as follows:
      this test data points from female articles only (i.e., the gender of entity1 should be female for all of these)
   \},
 \}
+```
 
 You can find it in WikiGenderBias.zip in the home directory of the repo.
 
